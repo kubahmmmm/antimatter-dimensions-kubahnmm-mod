@@ -496,5 +496,24 @@ export const tabs = [
         hidable: true
       }
     ]
+  },
+  {
+    key: "dust",
+    name: "Dust",
+    newUIClass: "dust",
+    hideAt: 1.5,
+    condition: () => Cloud.isAvailable,
+    id: 10,
+    hidable: true,
+    subtabs: [
+      {
+        key: "shop",
+        name: "Shop",
+        symbol: "$",
+        component: "ShopTab",
+        id: 0,
+        hidable: true
+      }
+    ]
   }
 ];
