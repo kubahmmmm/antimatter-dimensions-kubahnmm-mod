@@ -9,6 +9,105 @@ import { GlyphTypes } from "./glyph-effects";
 // This is actually reassigned when importing saves
 // eslint-disable-next-line prefer-const
 window.player = {
+  //MOD
+  imaginaryInfluence: new Set(),
+  light: {
+    inMirror: false,
+    prisms: 0,
+    redPercent: 0,
+    greenPercent: 0,
+    bluePercent: 0,
+    presets: [],
+  },
+  space: DC.D0,
+  spaceDivisiorActivePercentage: 1,
+  amProc: DC.D0,
+  spaceChalls: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 },
+  spaceResearches: {
+    r11: {
+      progress: DC.D0,
+      pendingProgress: DC.D0,
+      active: false,
+    },
+    r12: {
+      progress: DC.D0,
+      pendingProgress: DC.D0,
+      active: false,
+    },
+    r13: {
+      progress: DC.D0,
+      pendingProgress: DC.D0,
+      active: false,
+    },
+    r21: {
+      progress: DC.D0,
+      pendingProgress: DC.D0,
+      active: false,
+    },
+    r22: {
+      progress: DC.D0,
+      pendingProgress: DC.D0,
+      active: false,
+    },
+    r31: {
+      progress: DC.D0,
+      pendingProgress: DC.D0,
+      active: false,
+    },
+    r32: {
+      progress: DC.D0,
+      pendingProgress: DC.D0,
+      active: false,
+    },
+    r41: {
+      progress: DC.D0,
+      pendingProgress: DC.D0,
+      active: false,
+    },
+    r42: {
+      progress: DC.D0,
+      pendingProgress: DC.D0,
+      active: false,
+    },
+    r43: {
+      progress: DC.D0,
+      pendingProgress: DC.D0,
+      active: false,
+    },
+    r44: {
+      progress: DC.D0,
+      pendingProgress: DC.D0,
+      active: false,
+    },
+    r45: {
+      progress: DC.D0,
+      pendingProgress: DC.D0,
+      active: false,
+    },
+
+    r51: {
+      progress: DC.D0,
+      pendingProgress: DC.D0,
+      active: false,
+    },
+    r52: {
+      progress: DC.D0,
+      pendingProgress: DC.D0,
+      active: false,
+    },
+    r53: {
+      progress: DC.D0,
+      pendingProgress: DC.D0,
+      active: false,
+    },
+    r54: {
+      progress: DC.D0,
+      pendingProgress: DC.D0,
+      active: false,
+    },
+  },
+
+  //original
   antimatter: DC.E1,
   dimensions: {
     antimatter: Array.range(0, 8).map(() => ({
